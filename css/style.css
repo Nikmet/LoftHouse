@@ -109,6 +109,13 @@ a:hover {
   color: #D4C17F;
 }
 
+.title-2 {
+  font-size: 36px;
+  font-family: "Playfair Display", sans-serif;
+  color: #D4C17F;
+  font-weight: 700;
+}
+
 .header {
   min-height: 840px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("/img/header/header-bg.jpg"), lightgray 50%/cover no-repeat;
@@ -195,4 +202,61 @@ a:hover {
   font-size: 20px;
   font-weight: 300;
   line-height: 135%;
+}
+
+.appartaments__title {
+  margin-bottom: 88px;
+}
+.appartaments__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+.card::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  z-index: 7;
+  inset: 15px;
+  border: 3px double rgba(255, 255, 255, 0.6);
+  transition: opacity 0.4s ease-in;
+}
+.card:hover {
+  color: #fff;
+}
+.card:hover::after {
+  opacity: 1;
+}
+.card__img {
+  position: relative;
+  z-index: 5;
+  transition: all 0.4s ease-in;
+}
+.card:hover .card__img {
+  transform: scale(1.065);
+  fill: contrast(110%) brightness(1.2) saturate(1.2);
+}
+.card__title {
+  position: absolute;
+  z-index: 9;
+  left: 50px;
+  right: 20px;
+  bottom: 44px;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */
