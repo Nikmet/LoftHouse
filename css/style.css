@@ -97,6 +97,9 @@ body {
   padding: 0 15px;
   max-width: 1110px;
 }
+.container--sm {
+  max-width: 840px;
+}
 
 a {
   color: #fff;
@@ -170,4 +173,26 @@ a:hover {
 }
 .info--tel::before {
   background-image: url("/img/header/phone.svg");
+}
+
+.behefits {
+  padding: 120px 0;
+}
+.behefits__row {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+.behefits__item {
+  text-align: center;
+}
+.behefits__item-img {
+  margin-bottom: 53px;
+}
+.behefits__item-desc {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 135%;
 }/*# sourceMappingURL=style.css.map */
