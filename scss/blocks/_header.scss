@@ -1,0 +1,43 @@
+.header {
+    min-height: 840px;
+    background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("/img/header/header-bg.jpg"), lightgray 50% / cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 30px 0 74px 0;
+
+    &__top-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        position: relative;
+        text-align: center;
+        font-size: 48px;
+        font-family: $font-accent;
+        color: $accent;
+        font-weight: 700;
+        padding-bottom: 120px;
+
+        &-icon{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+.text-right{
+    text-align: right;
+}

@@ -1,15 +1,21 @@
-body{
+body {
     font-family: $font-main;
     background-color: $dark;
     color: $white;
     font-size: 16px;
 }
 
-a{
-    color: $white;
-    transition: all .2s ease-in;
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1110px;
+}
 
-    &:hover{
+a {
+    color: $white;
+    transition: all 0.2s ease-in;
+
+    &:hover {
         color: $accent;
     }
 }
