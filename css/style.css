@@ -259,4 +259,62 @@ a:hover {
   right: 20px;
   bottom: 44px;
   font-size: 24px;
+}
+
+.cta {
+  padding: 180px 0;
+  background: url("/img/CTA/cta-bg.jpg") center/cover no-repeat;
+}
+.cta__title {
+  margin-bottom: 17px;
+}
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.cta__text {
+  line-height: 150%;
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.form__input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  transition: all 0.4s ease-in;
+}
+.form__input::-moz-placeholder {
+  color: #bebebe;
+}
+.form__input::placeholder {
+  color: #bebebe;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.form__privacy {
+  font-size: 13px;
+  text-align: center;
+  color: #e7e7e7;
+}
+.form__btn {
+  font-family: "Raleway", sans-serif;
+  height: 50px;
+  background-color: #D4C17F;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.4s ease-in;
+}
+.form__btn:hover {
+  opacity: 0.85;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+.cta {
+    
+    padding: 180px 0;
+    background: url("/img/CTA/cta-bg.jpg") center / cover no-repeat;
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    &__text {
+        line-height: 150%;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
