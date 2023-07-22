@@ -1,0 +1,47 @@
+.footer {
+
+    background-color: $footer-bg;
+    padding: 72px 0 51px 0;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    &__logo {
+        margin-top: -12px;
+    }
+
+    &__nav {
+
+        &-list{
+            display: grid;
+            gap: 10px;
+        }
+
+    }
+
+    &__address {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__socials{
+        display: flex;
+        align-items: center;
+        column-gap: 22px;
+
+        li{
+            transition: all .4s ease-in;
+        }
+
+        li:hover{
+            opacity: .7;
+        }
+    }
+}
+
+
