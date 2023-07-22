@@ -1,8 +1,13 @@
 .behefits {
-
     position: relative;
+    overflow: hidden;
+    padding: 120px 0;
 
-    &::after{
+    @include media($tablet) {
+        padding: 50px 0;
+    }
+
+    &::after {
         content: "II";
         position: absolute;
         opacity: 0.02;
@@ -14,14 +19,21 @@
         left: calc(50% + 555px);
         transform: translateX(-50%);
         line-height: 1.25;
+
+        @include media($tablet) {
+            display: none;
+        }
     }
-
-
-    padding: 120px 0;
 
     &__row {
         display: flex;
         column-gap: 70px;
+
+        @include media($tablet){
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 40px 30px;
+        }
     }
 
     &__item {
@@ -30,6 +42,12 @@
 
     &__item-img {
         margin-bottom: 53px;
+
+        @include media($tablet) {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
     }
 
     &__item-desc {
@@ -38,5 +56,10 @@
         font-size: 20px;
         font-weight: 300;
         line-height: 135%;
+
+        @include media($tablet) {
+            font-size: 16px;
+            line-height: 125%;
+        }
     }
 }
