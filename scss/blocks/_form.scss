@@ -8,6 +8,8 @@
         font-size: 14px;
         transition: all .4s ease-in;
 
+        
+
         &::placeholder{
             color: $placeholder-color;
         }
@@ -21,6 +23,10 @@
         font-size: 13px;
         text-align: center;
         color: $privacy;
+
+        @include media($tablet){
+            grid-row: 4;
+        }
     }
 
     &__btn {

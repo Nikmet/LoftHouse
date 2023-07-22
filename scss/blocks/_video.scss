@@ -8,6 +8,10 @@
         left: calc(50% + 555px);
         transform: translateX(-50%);
         line-height: 1.5;
+
+        @include media($tablet){
+            display: none;
+        }
     }
 
     &__link {
@@ -43,11 +47,21 @@
         top: 50%;
         transform: translate(-50%, -50%);
         transition: all .4s ease-in;
+
+        @include media($tablet){
+            width: 60px;
+            height: 60px;
+        }
     }
 
     &__img {    
         width: 720px;
         height: 650px;
+
+        @include media($tablet){
+            width: 270px;
+            height: 270px;
+        }
     }
 }
 

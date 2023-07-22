@@ -1,7 +1,10 @@
 .cta {
-    
     padding: 180px 0;
     background: url("/img/CTA/cta-bg.jpg") center / cover no-repeat;
+
+    @include media($tablet) {
+        padding: 80px 0;
+    }
 
     &__title {
         margin-bottom: 17px;
@@ -11,15 +14,30 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+
+        @include media($tablet) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__text {
         line-height: 150%;
+
+        @include media($tablet) {
+            font-size: 14px;
+            line-height: 130%;
+        }
     }
 
     &__form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 35px;
+
+        @include media($tablet) {
+            justify-content: center;
+            grid-template-columns: max(290px);
+            gap: 25px;
+        }
     }
 }

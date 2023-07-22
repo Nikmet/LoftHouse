@@ -115,6 +115,11 @@ a:hover {
   color: #D4C17F;
   font-weight: 700;
 }
+@media screen and (max-width: 940px) {
+  .title-2 {
+    font-size: 28px;
+  }
+}
 
 .link-bold {
   font-weight: 700;
@@ -136,13 +141,13 @@ a:hover {
   justify-content: space-between;
   margin: 30px 0 74px 0;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .header {
     margin: 5px 0 74px 0;
     background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("/img/header/header-bg.jpg") 50% 30%, lightgray center/cover no-repeat;
   }
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .header {
     min-height: 500px;
   }
@@ -152,7 +157,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .header__nav {
     display: none;
   }
@@ -160,7 +165,7 @@ a:hover {
 .header__nav-btn {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .header__nav-btn {
     display: block;
   }
@@ -174,7 +179,7 @@ a:hover {
   font-weight: 700;
   padding-bottom: 120px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .header__title {
     font-size: 32px;
     padding-bottom: 100px;
@@ -191,7 +196,7 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .header__bottom {
     display: flex;
     flex-direction: column;
@@ -263,7 +268,7 @@ a:hover {
 .info--tel::before {
   background-image: url("/img/header/phone.svg");
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .info {
     font-size: 14px;
     padding-left: 25px;
@@ -275,7 +280,7 @@ a:hover {
   overflow: hidden;
   padding: 120px 0;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .behefits {
     padding: 50px 0;
   }
@@ -291,7 +296,7 @@ a:hover {
   transform: translateX(-50%);
   line-height: 1.25;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .behefits::after {
     display: none;
   }
@@ -301,7 +306,7 @@ a:hover {
   -moz-column-gap: 70px;
        column-gap: 70px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .behefits__row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -314,7 +319,7 @@ a:hover {
 .behefits__item-img {
   margin-bottom: 53px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .behefits__item-img {
     width: 60px;
     height: 60px;
@@ -328,7 +333,7 @@ a:hover {
   font-weight: 300;
   line-height: 135%;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 940px) {
   .behefits__item-desc {
     font-size: 16px;
     line-height: 125%;
@@ -352,10 +357,21 @@ a:hover {
 .appartaments__title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 940px) {
+  .appartaments__title {
+    margin-bottom: 44px;
+  }
+}
 .appartaments__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 940px) {
+  .appartaments__cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+  }
 }
 
 .card {
@@ -405,10 +421,23 @@ a:hover {
   bottom: 44px;
   font-size: 24px;
 }
+@media screen and (max-width: 940px) {
+  .card__title {
+    font-size: 20px;
+    left: 30px;
+    right: 20px;
+    bottom: 30px;
+  }
+}
 
 .cta {
   padding: 180px 0;
   background: url("/img/CTA/cta-bg.jpg") center/cover no-repeat;
+}
+@media screen and (max-width: 940px) {
+  .cta {
+    padding: 80px 0;
+  }
 }
 .cta__title {
   margin-bottom: 17px;
@@ -418,13 +447,31 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+@media screen and (max-width: 940px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .cta__text {
   line-height: 150%;
+}
+@media screen and (max-width: 940px) {
+  .cta__text {
+    font-size: 14px;
+    line-height: 130%;
+  }
 }
 .cta__form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 35px;
+}
+@media screen and (max-width: 940px) {
+  .cta__form {
+    justify-content: center;
+    grid-template-columns: 290px;
+    gap: 25px;
+  }
 }
 
 .form__input {
@@ -448,6 +495,11 @@ a:hover {
   font-size: 13px;
   text-align: center;
   color: #e7e7e7;
+}
+@media screen and (max-width: 940px) {
+  .form__privacy {
+    grid-row: 4;
+  }
 }
 .form__btn {
   font-family: "Raleway", sans-serif;
@@ -477,6 +529,11 @@ a:hover {
   left: calc(50% + 555px);
   transform: translateX(-50%);
   line-height: 1.5;
+}
+@media screen and (max-width: 940px) {
+  .video::after {
+    display: none;
+  }
 }
 .video__link {
   position: relative;
@@ -508,14 +565,31 @@ a:hover {
   transform: translate(-50%, -50%);
   transition: all 0.4s ease-in;
 }
+@media screen and (max-width: 940px) {
+  .video__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
 .video__img {
   width: 720px;
   height: 650px;
+}
+@media screen and (max-width: 940px) {
+  .video__img {
+    width: 270px;
+    height: 270px;
+  }
 }
 
 .section-map {
   position: relative;
   padding: 180px 0;
+}
+@media screen and (max-width: 940px) {
+  .section-map {
+    padding: 50px 0;
+  }
 }
 .section-map::before {
   content: "V";
@@ -532,6 +606,11 @@ a:hover {
 .section-map__title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 940px) {
+  .section-map__title {
+    margin-bottom: 38px;
+  }
+}
 .section-map__map {
   height: 358px;
   background-color: #626262;
@@ -539,6 +618,11 @@ a:hover {
 
 .feedback {
   padding-bottom: 180px;
+}
+@media screen and (max-width: 940px) {
+  .feedback {
+    padding-bottom: 80px;
+  }
 }
 .feedback__title {
   margin-bottom: 38px;
@@ -549,6 +633,11 @@ a:hover {
   gap: 30px;
   align-items: center;
 }
+@media screen and (max-width: 940px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
+}
 
 .footer {
   background-color: #2D343C;
@@ -556,10 +645,21 @@ a:hover {
   font-size: 14px;
   letter-spacing: 0.05rem;
 }
+@media screen and (max-width: 940px) {
+  .footer {
+    padding: 42px 0 31px 0;
+  }
+}
 .footer__row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 30px;
+}
+@media screen and (max-width: 940px) {
+  .footer__row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 }
 .footer__logo {
   margin-top: -12px;

@@ -1,5 +1,10 @@
 .section-map {
     position: relative;
+    padding: 180px 0;
+
+    @include media($tablet){
+        padding: 50px 0;
+    }
 
     &::before {
         content: "V";
@@ -10,10 +15,13 @@
         line-height: 1.9;
     }
 
-    padding: 180px 0;
 
     &__title {
         margin-bottom: 88px;
+
+        @include media($tablet){
+            margin-bottom: 38px;
+        }
     }
 
     &__map {

@@ -2,6 +2,10 @@
 
     padding-bottom: 180px;
 
+    @include media($tablet) {
+        padding-bottom: 80px;
+    }
+
     &__title {
         margin-bottom: 38px;
     }
@@ -11,6 +15,11 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
         align-items: center;
+
+        @include media($tablet) {
+            grid-template-columns: 1fr;
+        }
+
     }
 
 }
