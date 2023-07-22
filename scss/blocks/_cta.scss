@@ -1,6 +1,6 @@
 .cta {
     padding: 180px 0;
-    background: url("/img/CTA/cta-bg.jpg") center / cover no-repeat;
+    background: url("img/CTA/cta-bg.jpg") center / cover no-repeat;
 
     @include media($tablet) {
         padding: 80px 0;
