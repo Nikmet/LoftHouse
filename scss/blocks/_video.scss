@@ -1,5 +1,21 @@
 .video {
 
+    position: relative;
+
+    &::after{
+        content: "IV";
+        position: absolute;
+        opacity: 0.02;
+
+        font-size: 400px;
+        font-family: $font-accent;
+
+        top: 0;
+        left: calc(50% + 555px);
+        transform: translateX(-50%);
+        line-height: 1.5;
+    }
+
     &__link {
         position: relative;
         display: block;

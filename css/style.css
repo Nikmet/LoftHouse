@@ -188,7 +188,19 @@ a:hover {
 }
 
 .behefits {
+  position: relative;
   padding: 120px 0;
+}
+.behefits::after {
+  content: "II";
+  position: absolute;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", sans-serif;
+  top: 0;
+  left: calc(50% + 555px);
+  transform: translateX(-50%);
+  line-height: 1.25;
 }
 .behefits__row {
   display: flex;
@@ -209,6 +221,20 @@ a:hover {
   line-height: 135%;
 }
 
+.appartaments {
+  position: relative;
+}
+.appartaments::before {
+  content: "III";
+  position: absolute;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", sans-serif;
+  top: 0;
+  right: calc(50% + 555px);
+  transform: translateX(50%);
+  line-height: 1;
+}
 .appartaments__title {
   margin-bottom: 88px;
 }
@@ -324,6 +350,20 @@ a:hover {
   opacity: 0.85;
 }
 
+.video {
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  position: absolute;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", sans-serif;
+  top: 0;
+  left: calc(50% + 555px);
+  transform: translateX(-50%);
+  line-height: 1.5;
+}
 .video__link {
   position: relative;
   display: block;
@@ -360,7 +400,20 @@ a:hover {
 }
 
 .section-map {
+  position: relative;
   padding: 180px 0;
+}
+.section-map::before {
+  content: "V";
+  position: absolute;
+  opacity: 0.02;
+  z-index: -1;
+  font-size: 400px;
+  font-family: "Playfair Display", sans-serif;
+  top: 0;
+  right: calc(50% + 555px);
+  transform: translateX(50%);
+  line-height: 1.9;
 }
 .section-map__title {
   margin-bottom: 88px;
