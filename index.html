@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="libs/youtubeLightbox/youtubeLightbox.css" />
         <title>LoftHouse</title>
     </head>
     <body>
@@ -117,7 +118,7 @@
                         </div>
                         <form action="" class="cta__form form">
                             <input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off" />
-                            <input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off" />
+                            <input type="text" class="form__input" data-tel-input placeholder="Ваш телефон" autocomplete="off" />
                             <p class="form__privacy">
                                 *Мы никому не передаем ваши данные. <br />
                                 И не сохраняем ваш номер в базу.
@@ -130,7 +131,7 @@
 
             <section class="video">
                 <div class="container">
-                    <a href="https://www.youtube.com/watch?v=vmPE2pOEPnU" class="video__link" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=vmPE2pOEPnU" class="video__link" target="_blank" data-youtubeLightbox>
                         <img src="img/video/play.svg" alt="icon" class="video__icon" />
                         <img src="img/video/video-preview.jpg" alt="video-preview" class="video__img" />
                     </a>
@@ -143,7 +144,9 @@
                         <h2 class="title-2">Район на карте</h2>
                     </div>
                     <div class="section-map__map">
-                        <div class="map" id="map"></div>
+                        <div class="map" id="map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4838afa35dcf3b681137a1b1baeabc0b6ce06d5dc9424c38b49d70102b0c636e&amp;source=constructor" width="100%" height="358px" frameborder="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -159,7 +162,7 @@
                             И не сохраняем ваш номер в базу.
                         </p>
                         <input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off" />
-                        <input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off" />
+                        <input type="text" class="form__input" data-tel-input placeholder="Ваш телефон" autocomplete="off" />
                         <button type="submit" class="form__btn">Посмотреть район</button>
                     </form>
                 </div>
@@ -222,6 +225,18 @@
             </div>
         </footer>
 
+        <div id="youtubelightbox" class="youtubelightbox">
+            <div class="youtubelightbox__centeredchild">
+                <div class="youtubelightbox__videowrapper">
+                    <div id="youtubelightboxPlayer"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=dd696e5e-3342-4734-bedd-36d142a10214&lang=ru_RU" type="text/javascript"></script>
+        <script src="libs/phoneMask/mask.js"></script>
+        <script src="libs/phoneMask/mask_list.js"></script>
+        <script src="libs/youtubeLightbox/youtubeLightbox.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
