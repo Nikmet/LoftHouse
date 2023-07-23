@@ -144,7 +144,7 @@ a:hover {
 @media screen and (max-width: 940px) {
   .header {
     margin: 5px 0 74px 0;
-    background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("img/header/header-bg.jpg") 50% 30%, lightgray center/cover no-repeat;
+    background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../img/header/header-bg.jpg") 50% 30%, lightgray center/cover no-repeat;
   }
 }
 @media screen and (max-width: 940px) {
@@ -262,11 +262,11 @@ a:hover {
   top: 0;
   height: 21px;
   width: 21px;
-  background-image: url("img/header/map.svg");
+  background-image: url("../img/header/map.svg");
   background-repeat: no-repeat;
 }
 .info--tel::before {
-  background-image: url("img/header/phone.svg");
+  background-image: url("../img/header/phone.svg");
 }
 @media screen and (max-width: 940px) {
   .info {
