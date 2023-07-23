@@ -3,6 +3,7 @@ body {
     background-color: $dark;
     color: $white;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 .container {
@@ -10,8 +11,8 @@ body {
     padding: 0 15px;
     max-width: 1110px;
 
-    &--sm{
-        max-width: 840px;       
+    &--sm {
+        max-width: 840px;
     }
 }
 
@@ -24,25 +25,25 @@ a {
     }
 }
 
-.title-2{
+.title-2 {
     font-size: 36px;
     font-family: $font-accent;
     color: $accent;
     font-weight: 700;
 
-    @include media($tablet){
+    @include media($tablet) {
         font-size: 28px;
     }
 }
 
-.link-bold{
+.link-bold {
     font-weight: 700;
 }
 
-.none{
+.none {
     display: none;
 }
 
-.no-scroll{
+.no-scroll {
     overflow-y: hidden;
 }
